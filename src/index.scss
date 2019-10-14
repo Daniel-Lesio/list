@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: inherit;
+}
+body{
+  margin: 0;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+//Shadow
+.shadow{
+box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3);
+}
+//SideNav
+.sideNav{
+position: fixed;
+z-index: 3;
+top : 49px;
+padding-top: 5px;
+width: 300px;
+height: calc(100vh - 50px);
+background: white; 
+}
+.sideNavOverlay {
+position : fixed;
+top : 0;
+right:  0;
+width : 100vw;
+height : 100vh;
+background : #333;
+z-index: 2;
+opacity : 0.3;
+}
+//Typography
+
+.desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2.75px;
+  line-height: 18px;
+  text-transform: uppercase;
+  //color: #BABAC2;
+  }
+  h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 43px;
+  text-transform: none;
+  //color: #1D1D1E;
+  }
+  p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 21px;
+  text-transform: none;
+  //color: #1D1D1E;
+  }
+  
+  //mode BUTTON
+  .mode-button{
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 75px;
+    width: 75px;
+    background: #333;
+    border: solid 3px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .menu-icon-btn{
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+    }
+  //navbar
+    #nav{
+      position : fixed;
+      width : 100vw;
+      top :0;
+      z-index: 30;
+    }
+    nav{
+    height: 50px;
+      ul{
+        background:  transparent;
+        border : transparent;
+        padding: 0;
+        margin: 0;
+        li{
+          padding: 0;
+          margin: 0;
+          border : transparent;
+          display : flex;
+          justify-content: center;
+          align-items:  center;
+          line-height: 50px;
+          cursor: pointer;
+          padding-left: 10px;
+          padding-right: 10px;
+          
+          //border-bottom: 2px solid springgreen;
+        }
+      }
+    }
+
+
+    //layout page
+
+    .test {
+      background: darkcyan;
+    }
+   .social{
+     position: sticky!important;
+     top: 50px
+   }
+   .btn{
+     line-height: 50px;
+   }
+
+   .rounded{
+     border-radius: 5px
+   }
