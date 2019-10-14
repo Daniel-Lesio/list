@@ -11,7 +11,6 @@ const ListContextProvider  = (props) => {
             return localData ? JSON.parse(localData) : [] 
         }
     )
-    const [loaded,setLoaded] = useState(false)
     const addToList = (task,description)=>setItems([...items,{ id:uuid(),task,description}])
     
     

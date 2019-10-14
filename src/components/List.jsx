@@ -9,10 +9,10 @@ const List = () => {
     const list = items.length>0 ? items.map( item => (
         <Item item={item} key={item.id}></Item>
      ) ) :
-     (<div className=''><h4>Nie ma żadnej książki</h4></div>)
+     (<div className=''></div>)
     return (
         <div>
-            <div className='container'  style={{ marginTop : '70px'}}>
+            <div className='container'>
             {list}
             
 
